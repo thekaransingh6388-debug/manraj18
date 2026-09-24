@@ -5,7 +5,7 @@
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <title id="site-title">TRADE FINDER</title>
 
-  <!-- ✅ NEW Meta Pixel Code -->
+  <!-- ✅ NEW Meta Pixel Code (replaced) -->
   <script>
     !function(f,b,e,v,n,t,s)
     {if(f.fbq)return;n=f.fbq=function(){n.callMethod?
@@ -15,11 +15,11 @@
     t.src=v;s=b.getElementsByTagName(e)[0];
     s.parentNode.insertBefore(t,s)}(window, document,'script',
     'https://connect.facebook.net/en_US/fbevents.js');
-    fbq('init', '2739402179827410');
+    fbq('init', '1780859583117931');
     fbq('track', 'PageView');
   </script>
   <noscript><img height="1" width="1" style="display:none"
-    src="https://www.facebook.com/tr?id=2739402179827410&ev=PageView&noscript=1"
+    src="https://www.facebook.com/tr?id=1780859583117931&ev=PageView&noscript=1"
   /></noscript>
   <!-- End Meta Pixel Code -->
 
@@ -108,6 +108,7 @@
       transition: all 0.3s ease;
       box-shadow: 0 4px 15px rgba(0, 198, 255, 0.4);
       animation: pulse 1.5s infinite;
+      cursor: pointer;
     }
     @keyframes pulse {
       0% { box-shadow: 0 0 0 0 rgba(0,198,255,0.7); }
@@ -200,7 +201,7 @@
         <div class="stat-box">Free to Join</div>
       </div>
 
-      <!-- ✅ Telegram Join Button with Lead Event Tracking -->
+      <!-- ✅ Telegram Join Button with Lead Event Tracking (new pixel) -->
       <a id="cta-btn-1" class="cta-btn" onclick="fbq('track', 'Lead');">
         <i class="fa-brands fa-telegram me-1"></i> Join on Telegram
       </a>
@@ -220,7 +221,7 @@
     <i class="fa-solid fa-bolt"></i> Ad manage by Karan Agency
   </div>
 
-  <!-- Auto Apply Variables & Event Tracking -->
+  <!-- Auto Apply Variables & Event Tracking (updated for new pixel) -->
   <script>
     document.getElementById("site-title").innerText = SITE_NAME;
     document.getElementById("site-heading").innerHTML = 
