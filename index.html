@@ -5,7 +5,7 @@
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <title id="site-title">TRADE FINDER</title>
 
-  <!-- ✅ Meta Pixel Code (NEW) -->
+  <!-- Meta Pixel Code -->
   <script>
     !function(f,b,e,v,n,t,s)
     {if(f.fbq)return;n=f.fbq=function(){n.callMethod?
@@ -153,7 +153,6 @@
       font-size: 13px;
       color: #aaa;
     }
-    /* Tiny side text: Ad manage by Karan Agency */
     .ad-manage-tag {
       position: fixed;
       bottom: 10px;
@@ -181,10 +180,10 @@
 </head>
 <body>
 
-  <!-- ✅ Easy Variables -->
+  <!-- Easy Variables -->
   <script>
     const SITE_NAME = "TRADE FINDER";
-    const SITE_IMAGE = "https://karanmetalabe.com/wp-content/uploads/2026/05/wordpress_optimized_image.jpg"; // 🔄 NEW logo
+    const SITE_IMAGE = "https://karanmetalabe.com/wp-content/uploads/2026/05/wordpress_optimized_image.jpg";
     const TELEGRAM_LINK = "https://t.me/+NIBMKzHyeqQ0MjU1";
   </script>
 
@@ -201,7 +200,7 @@
         <div class="stat-box">Free to Join</div>
       </div>
 
-      <!-- ✅ Telegram Join Button with Lead Event Tracking (new pixel) -->
+      <!-- Telegram Join Button with Lead Event Tracking -->
       <a id="cta-btn-1" class="cta-btn" onclick="fbq('track', 'Lead');">
         <i class="fa-brands fa-telegram me-1"></i> Join on Telegram
       </a>
@@ -211,8 +210,6 @@
         <div class="benefit-card"><i class="fa-solid fa-check-circle highlight"></i> Learn with Experts</div>
         <div class="benefit-card"><i class="fa-solid fa-check-circle highlight"></i> Practical Strategies</div>
       </div>
-
-      <!-- REMOVED: "Stay Ahead with Knowledge", Ads by ADSGURU, adguru logo -->
     </div>
   </section>
 
@@ -221,17 +218,15 @@
     <i class="fa-solid fa-bolt"></i> Ad manage by Karan Agency
   </div>
 
-  <!-- Auto Apply Variables & Event Tracking (updated for new pixel) -->
+  <!-- Auto Apply Variables & Event Tracking -->
   <script>
     document.getElementById("site-title").innerText = SITE_NAME;
     document.getElementById("site-heading").innerHTML = 
       `<i class="fa-solid fa-crown crown"></i> ${SITE_NAME} <i class="fa-solid fa-crown crown"></i>`;
     document.getElementById("site-logo").src = SITE_IMAGE;
-    
+
     const ctaBtn1 = document.getElementById("cta-btn-1");
     ctaBtn1.href = TELEGRAM_LINK;
-    
-    // (cta-btn-2 removed, no error)
   </script>
 
 </body>
