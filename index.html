@@ -176,13 +176,6 @@
       margin-right: 4px;
       color: #ffcc00;
     }
-    /* Redirect notice */
-    .redirect-note {
-      font-size: 13px;
-      color: #ffcc00;
-      margin-top: 4px;
-      font-weight: 500;
-    }
   </style>
 </head>
 <body>
@@ -192,7 +185,6 @@
     const SITE_NAME = "TRADE FINDER";
     const SITE_IMAGE = "https://karanmetalabe.com/wp-content/uploads/2026/05/wordpress_optimized_image.jpg";
     const TELEGRAM_LINK = "https://t.me/+NIBMKzHyeqQ0MjU1";
-    const REDIRECT_SECONDS = 6;
   </script>
 
   <section class="hero">
@@ -212,9 +204,6 @@
       <a id="cta-btn-1" class="cta-btn" onclick="fbq('track', 'Lead');">
         <i class="fa-brands fa-telegram me-1"></i> Join on Telegram
       </a>
-      <div class="redirect-note">
-        <i class="fa-solid fa-hourglass-half"></i> Redirecting in <span id="countdown">6</span> seconds...
-      </div>
 
       <div class="benefits">
         <div class="benefit-card"><i class="fa-solid fa-check-circle highlight"></i> Market Insights & Discussions</div>
@@ -229,7 +218,7 @@
     <i class="fa-solid fa-bolt"></i> Ad manage by Karan Agency
   </div>
 
-  <!-- Auto Apply Variables & Event Tracking -->
+  <!-- Auto Apply Variables -->
   <script>
     document.getElementById("site-title").innerText = SITE_NAME;
     document.getElementById("site-heading").innerHTML = 
@@ -238,23 +227,6 @@
 
     const ctaBtn1 = document.getElementById("cta-btn-1");
     ctaBtn1.href = TELEGRAM_LINK;
-
-    // ===== 6 SECOND AUTO REDIRECT =====
-    let secondsLeft = REDIRECT_SECONDS;
-    const countdownEl = document.getElementById("countdown");
-
-    // Fire Lead event once, right when page loads (so it's not lost on redirect)
-    fbq('track', 'Lead');
-
-    const timer = setInterval(() => {
-      secondsLeft--;
-      if (countdownEl) countdownEl.innerText = secondsLeft;
-
-      if (secondsLeft <= 0) {
-        clearInterval(timer);
-        window.location.href = TELEGRAM_LINK;
-      }
-    }, 1000);
   </script>
 
 </body>
